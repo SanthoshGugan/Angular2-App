@@ -1,10 +1,13 @@
 <div class="row">
   <div class="container-fluid">
     <div class="col-md-6">
-      <h3>Overall Movie Rating: {{movieRating}}</h3>
+      <h3 *ngIf="movieRating">Overall Movie Rating: {{movieRating}}</h3>
       <h1>Plot</h1>
     </div>
-    <app-user-rating [(plotModel)]="model"></app-user-rating>
+    <app-user-rating 
+      (onRatingChange)="this.onRatingChange.emit($event)" 
+      [(plotModel)]="model">
+    </app-user-rating>
     <p class="plot col-md-12">An ambulance driver, a medical-broker, a hospital HR (Pasanga Sivakumar) and a surgeon, were mysteriously abducted at
       dawn. Alerted by the incidents, Ratnavel (Sathyaraj), a police officer with Tamil Nadu Police nabs the suspect. As
       the interrogation begins the suspect explains his motive, Maaran (Vijay), popularly known as ₹5 doctor, as he charges
@@ -42,5 +45,9 @@
       corrupt practices are eliminated. Meanwhile in prison, Vetri contemplates a television news report in which a young
       girl had died due to negligent medical treatment, before vanishing off.</p>
   </div>
-    <app-user-rating class="col-md-offset-6 col-md-6" [(plotModel)]="model"></app-user-rating>
+    <app-user-rating 
+      class="col-md-offset-6 col-md-6" 
+      (onRatingChange)="this.onRatingChange.emit($event)"  
+      [(plotModel)]="model">
+    </app-user-rating>
 </div>

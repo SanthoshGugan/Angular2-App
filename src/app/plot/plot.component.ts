@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
 import { PlotModel } from './plot.model';
 
 @Component({
@@ -9,7 +9,7 @@ import { PlotModel } from './plot.model';
 export class PlotComponent implements OnInit {
 
   @Input() movieRating;
-
+  @Output() onRatingChange = new EventEmitter<any>();
   model: PlotModel;
 
   constructor() { }
