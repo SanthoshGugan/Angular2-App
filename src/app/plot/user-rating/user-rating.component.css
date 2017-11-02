@@ -1,0 +1,18 @@
+.active {
+    background: gold !important;
+    color: black !important;
+}
+
+.userBtn {
+    background: gray;
+    color: white;
+    margin: 5px;
+}
+
+.rating-comp * {
+    display: inline;
+}
+
+.rating-comp {
+    padding-top: 20px;
+}

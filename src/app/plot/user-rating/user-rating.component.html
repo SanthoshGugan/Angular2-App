@@ -1,0 +1,7 @@
+<div class="rating-comp">
+  <h2>My Rating:</h2>
+  <button class="userBtn" [ngClass]="{'active': rate.clicked}" (click)="onRating(rate)" *ngFor="let rate of plotModel.ratings">
+    {{rate.rating}}
+  </button>
+<!--<star-rating-comp [starType]="'icon'" [rating]="10" [staticColor]="'ok'" [numOfStars]="10" [hoverEnabled]="true"></star-rating-comp>-->
+</div>
