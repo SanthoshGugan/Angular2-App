@@ -1,5 +1,5 @@
 <div class="rating-comp">
-  <h2>My Rating:</h2>
+  <h2>{{ratingText}}</h2>
   <button class="userBtn" [ngClass]="{'active': rate.clicked}" (click)="onRating(rate)" *ngFor="let rate of plotModel.ratings">
     {{rate.rating}}
   </button>

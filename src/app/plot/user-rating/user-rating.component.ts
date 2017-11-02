@@ -9,6 +9,7 @@ import { PlotModel } from '../plot.model';
 export class UserRatingComponent implements OnInit {
 
   @Input() plotModel;
+  @Input() ratingText;
   @Output() onRatingChange = new EventEmitter<any>();
 
   constructor() { }
