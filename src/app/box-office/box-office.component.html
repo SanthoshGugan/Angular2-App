@@ -1,3 +1,32 @@
-<p>
-  box-office works!
-</p>
+<div class="container-fliud">
+	<!-- Box Office Heading -->
+	<div class="row heading">
+		<p class="col-xs-12 text-center">Box Office</p>
+	</div>
+
+	<!-- Box Office information -->
+	<!-- 6 box office should be coming here -->
+	<div class="row bOCircles">
+		
+	</div>
+
+	<!-- rating -->
+	<!-- Rating component -->
+	<div class="row rating">
+		<div class="stars col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<span (click)="rate(1)">1</span>
+			<span (click)="rate(2)">2</span>
+			<span (click)="rate(3)">3</span>
+			<span (click)="rate(4)">4</span>
+			<span (click)="rate(5)">5</span>
+			<span (click)="rate(6)">6</span>
+			<span (click)="rate(7)">7</span>
+			<span (click)="rate(8)">8</span>
+			<span (click)="rate(9)">9</span>
+			<span (click)="rate(10)">10</span>
+		</div>
+		<div class="average col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			{{average| number:'1.1-1'}}
+		</div>
+	</div>
+</div>

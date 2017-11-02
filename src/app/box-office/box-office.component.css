@@ -1,0 +1,33 @@
+.heading{
+	font-size: 5em;
+	font-weight: 700;
+}
+
+/*Stars*/
+.rating{
+	text-align: center;
+}
+.stars, .average{
+	float: none !important;
+	margin: 0 auto;
+}
+
+.stars span{
+	margin-right: 5%;
+	cursor: pointer;
+	font-size: 2em;
+
+}
+/*SM*/
+@media (min-width: 750px) and (max-width: 990px){
+	.heading{
+		font-size: 3em;
+	}
+}
+
+/*XS*/
+@media (max-width: 750px){
+	.heading{
+		font-size: 3em;
+	}
+}
