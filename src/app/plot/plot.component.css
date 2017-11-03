@@ -3,3 +3,7 @@
     line-height: 30px;
     font-family: monospace;
 }
+
+/deep/ star-rating-comp .rating {
+    padding-top: 30px;
+}

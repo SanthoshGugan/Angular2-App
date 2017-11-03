@@ -1,8 +1,19 @@
 <div class="row">
   <div class="container-fluid">
-    <div class="col-md-6">
+    <div class="col-md-3">
       <h3 *ngIf="movieRating">Overall Movie Rating: {{movieRating}}</h3>
       <h1>Plot</h1>
+    </div>
+    <div class="col-md-3">
+    <star-rating-comp 
+      class="stars" 
+      [starType]="'icon'" 
+      [rating]="movieRating" 
+      [staticColor]="'ok'" 
+      [numOfStars]="5" 
+      [readOnly]="true" 
+      [hoverEnabled]="true">
+    </star-rating-comp>
     </div>
     <hr class="col-md-12">
     <app-user-rating 
