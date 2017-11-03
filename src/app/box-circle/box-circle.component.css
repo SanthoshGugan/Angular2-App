@@ -1,0 +1,8 @@
+.boxCircle{
+	border-radius: 150px;
+	border: 2px solid black;
+	height: 250px;
+	width: 250px;
+	float: none !important;
+	margin: 0 auto;
+}

@@ -8,6 +8,7 @@ import { MersalComponent } from './mersal/mersal.component';
 import { UserRatingComponent } from './plot/user-rating/user-rating.component';
 
 import { StarRatingModule } from 'angular-star-rating';
+import { BoxCircleComponent } from './box-circle/box-circle.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StarRatingModule } from 'angular-star-rating';
     BoxOfficeComponent,
     PlotComponent,
     MersalComponent,
-    UserRatingComponent
+    UserRatingComponent,
+    BoxCircleComponent
   ],
   imports: [
     BrowserModule,

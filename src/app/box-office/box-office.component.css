@@ -12,16 +12,37 @@
 	margin: 0 auto;
 }
 
-.stars span{
+.stars div{
 	margin-right: 5%;
 	cursor: pointer;
 	font-size: 2em;
+	float: left;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    padding: 10px;
+    width: 60px;
+    height: 60px;	
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
 
+.stars div:hover{
+	border: 2px solid gold;
+	font-weight: 700;
 }
 /*SM*/
 @media (min-width: 750px) and (max-width: 990px){
 	.heading{
 		font-size: 3em;
+	}
+
+	.stars div{
+		margin-right: 2%;
+		width: 45px;
+		height: 45px;
+		font-size: 1.15em;
 	}
 }
 
@@ -29,5 +50,12 @@
 @media (max-width: 750px){
 	.heading{
 		font-size: 3em;
+	}
+
+	.stars div{
+		margin-right: 2%;
+		width: 45px;
+		height: 45px;
+		font-size: 1.15em;
 	}
 }

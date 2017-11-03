@@ -7,26 +7,49 @@
 	<!-- Box Office information -->
 	<!-- 6 box office should be coming here -->
 	<div class="row bOCircles">
-		
+		<div class="col-lg-4">
+			<app-box-circle></app-box-circle>			
+		</div>
 	</div>
 
 	<!-- rating -->
 	<!-- Rating component -->
 	<div class="row rating">
-		<div class="stars col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			<span (click)="rate(1)">1</span>
-			<span (click)="rate(2)">2</span>
-			<span (click)="rate(3)">3</span>
-			<span (click)="rate(4)">4</span>
-			<span (click)="rate(5)">5</span>
-			<span (click)="rate(6)">6</span>
-			<span (click)="rate(7)">7</span>
-			<span (click)="rate(8)">8</span>
-			<span (click)="rate(9)">9</span>
-			<span (click)="rate(10)">10</span>
+		<div class="stars col-xs-12 col-sm-12 col-md-11 col-lg-11">
+			<div>
+				<span (click)="rate(1)">1</span>
+			</div>
+			<div>
+				<span (click)="rate(2)">2</span>
+			</div>
+			<div>
+				<span (click)="rate(3)">3</span>
+			</div>
+			<div>
+				<span (click)="rate(4)">4</span>
+			</div>
+			<div>
+				<span (click)="rate(5)">5</span>
+			</div>
+			<div>
+				<span (click)="rate(6)">6</span>
+			</div>
+			<div>
+				<span (click)="rate(7)">7</span>
+			</div>
+			<div>
+				<span (click)="rate(8)">8</span>
+			</div>
+			<div>
+				<span (click)="rate(9)">9</span>
+			</div>
+			<div>
+				<span (click)="rate(10)">10</span>
+			</div>
+			
 		</div>
-		<div class="average col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			{{average| number:'1.1-1'}}
-		</div>
+			<!-- <div class="average col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				{{average| number:'1.1-1'}}
+			</div> -->
 	</div>
-</div>
+	</div>
