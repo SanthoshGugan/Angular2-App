@@ -3,6 +3,6 @@
   <img class="img-responsive mersalImg" src="../../assets/images/mersal_main.JPG" alt="Mersal Main Picture">
   </div> 
 </div>
-<app-plot [movieRating]="movieRating" (onRatingChange)="ratingChange($event)"></app-plot>
+<app-plot [movieRating]="movieRating" (onRatingChange)="plotRatingChange($event)"></app-plot>
 
-<app-box-office (ratingChange) = "ratingChange($event)"></app-box-office>
+<app-box-office (ratingChange) = "boRatingChange($event)"></app-box-office>

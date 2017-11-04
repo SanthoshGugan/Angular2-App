@@ -8,15 +8,29 @@ import { PlotComponent } from '../plot/plot.component';
 })
 export class MersalComponent implements OnInit {
 
-  movieRating: number; 
+  movieRating: number;
+  plotRating: number = 0;
+  boRating: number = 0;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  ratingChange(plotRating, boRating = 0) {
-    this.movieRating = (plotRating + boRating) / 2;
+  plotRatingChange(plotRating) {
+    this.plotRating = plotRating;
+    this.updateMovieRating();
   }
+
+  boRatingChange(boRating) {
+    this.boRating = boRating;
+    this.updateMovieRating();
+  }
+
+  updateMovieRating() {
+    this.movieRating = (this.boRating + this.plotRating) / 4;
+  }
+
+
 
 }
