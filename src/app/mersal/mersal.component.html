@@ -4,3 +4,5 @@
   </div> 
 </div>
 <app-plot [movieRating]="movieRating" (onRatingChange)="ratingChange($event)"></app-plot>
+
+<app-box-office (ratingChange) = "ratingChange($event)"></app-box-office>
