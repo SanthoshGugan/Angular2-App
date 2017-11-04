@@ -1,11 +1,10 @@
-<div class="boxCircle">
+<div class="boxCircle" [ngStyle]="{'background-image': url(image)}">
 	<div class="overlay">
-		
-
+		<div class="text">{{overlay}}</div>
 	</div>
 	<div class="bCContent">
 		<div class="bCHead">
-			Theatres
+			{{heading}}
 		</div>
 	</div>
 </div>

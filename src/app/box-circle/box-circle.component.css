@@ -4,5 +4,53 @@
 	height: 250px;
 	width: 250px;
 	float: none !important;
-	margin: 0 auto;
+	margin: 2% auto;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+    transition: background 1s;
 }
+.boxCircle:hover{
+	background: none;
+}
+.bCContent {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    font-size: 2.5em;
+    transition: all 1s;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.boxCircle:hover .bCContent{
+    opacity: 0;
+}
+
+.overlay{
+	position: absolute;
+	opacity: 0;
+	background-color: #ccc;
+	top: 0%;
+	left: 0%;
+	transition: all 1.5s;
+	width: 250px;
+	height: 250px;
+}
+
+.overlay .text{
+	margin: 35% 22%;
+	font-size: 3em;
+	font-weight: 600;
+	color: orange;
+}
+.boxCircle:hover .overlay{
+	opacity: 1;
+}
+
+
+
+
+
+

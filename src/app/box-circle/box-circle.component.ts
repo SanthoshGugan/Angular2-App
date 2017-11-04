@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-box-circle',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxCircleComponent implements OnInit {
 
+	@Input() image;
+	@Input() heading;
+	@Input() overlay;
   constructor() { }
 
   ngOnInit() {
   }
 
+  url(img){
+  	return "url('"+img+"')";
+  }
 }
